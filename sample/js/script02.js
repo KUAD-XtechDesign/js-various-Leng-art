@@ -1,19 +1,19 @@
 $(function(){
 
-  let windowH
-  let documentH 
-  let documentW 
-  let scrollTop
-  let separate
-  let scrollRatio
+  let windowH//ウィンドウの高さ
+  let documentH //内容の高さ
+  let documentW //内容の幅
+  let scrollTop//何ピクセルスクロールしたか
+  let separate//内容の高さを3分割した数値
+  let scrollRatio//どれくらいスクロールされたか0から1
 
   //スクロールしたりウィンドウサイズを変えた時に実行
   $(window).on("scroll resize load",function(){
-    windowH = $(this).height()//ウィンドウの高さ
+    windowH = $(window).height()//ウィンドウの高さ
     documentH = $(document).height()//内容の高さ
     documentW = $(document).width()//内容の幅
-    scrollTop = $(this).scrollTop()//何ピクセルスクロールしたか
-    scrollRatio = scrollTop/(documentH-windowH)//どれくらいスクロールされたか0から1
+    scrollTop = $(window).scrollTop()//何ピクセルスクロールしたか
+    scrollRatio = scrollTop / (documentH-windowH)//どれくらいスクロールされたか0から1
     
     separate = documentH / 3;//内容の高さを3分割した数値
 
