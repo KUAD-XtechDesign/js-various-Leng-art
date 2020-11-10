@@ -20,7 +20,7 @@ html
 @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
 
 h1{
-    margin: 0%;
+    margin: 10px;
     writing-mode: vertical-rl;
     text-align: center;
     font-size: 60px;
@@ -32,6 +32,7 @@ h1{
 
 h2{
     writing-mode: vertical-rl;
+    margin: 10px;
 }
 
 ul{
@@ -45,6 +46,7 @@ audio{
     background-position: left 100px;
     writing-mode: vertical-rl;
     border: 5px;
+    width: 100%;
 }
 
 #main_nav{
