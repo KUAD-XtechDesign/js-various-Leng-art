@@ -7,3 +7,9 @@ for (let i =0; i < 50; i++){
 document.querySelector('html').onclick = function() {
     alert('いたい');
 }
+
+$(function(){
+    setTimeout(function(){
+        $("#intro").fadeOut(2000)
+    },2000)
+})
