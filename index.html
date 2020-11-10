@@ -1,26 +1,72 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <!-- 自分のcss -->
-  <link rel="stylesheet" href="./css/style.css" />
-  <!-- 自分のjs -->
-  <script src="./js/script.js"></script>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- 自分のcss -->
+   <link rel="stylesheet" href="./css/style.css" />
+   <!-- 自分のjs -->
+   <script src="./js/script.js"></script>
   <title>目次</title>
 </head>
 <body>
-  <h1>サンプル</h1>
   
-  <ul>
-    <li><a href="./sample/sample01.html">サンプル1</a></li>
-    <li><a href="./sample/sample02.html">サンプル2</a></li>
-    <li><a href="./sample/sample03.html">サンプル3</a></li>
-    <li><a href="./sample/sample04.html">サンプル4</a></li>
-  </ul>
-  <audio autoplay="autoplay">
-    <source src="sample/images/1.mp3">
+  <div class='wrapper'>
+    <header>
+      <aul id='main_nav'>
+       <ul>
+         <li><a href="./sample/sample01.html">SAMPLE1</a></li>
+         <li><a href="./sample/sample02.html">SAMPLE2</a></li>
+         <li><a href="./sample/sample03.html">SAMPLE3</a></li>
+         <li><a href="./sample/sample04.html">SAMPLE4</a></li>
+       </ul>
+      </aul>
+    </header>
+    
+    <main>
+      <h1>サンプル</h1>
+
+      <h2>過去の練習</h2>
+
+      <div class="container">
+        <div class="card">
+          <div class="imgBx">
+            <img src="./sample/images/3.jpg">
+          </div>
+          <div class="content">
+            <h3>10.16</h3>
+            <p>
+              <a href="https://kuad-xtechdesign.github.io/js-practice-Leng-art/">JavaScript基礎</a></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="./sample/images/4.jpg">
+          </div>
+          <div class="content">
+            <h3>10.23</h3>
+            <p>
+              <a href="https://kuad-xtechdesign.github.io/js-practice2-Leng-art/">JavaScript基礎2</a></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="imgBx">
+            <img src="./sample/images/5.jpg">
+          </div>
+          <div class="content">
+            <h3>10.30</h3>
+            <p>
+              <a href="https://kuad-xtechdesign.github.io/js-array-Leng-art/">JavaScript配列</a></p>
+          </div>
+        </div>
+      </div>
+    </main>
+  
+  <audio controls="controls" autoplay="autoplay" loop>
+   <source src="./sample/images/1.mp3" controls="controls">
   </audio>
+  
 
 </body>
 </html>
